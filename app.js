@@ -25,7 +25,7 @@ instagram.use({
 });
 
 exports.handleAuth = function (req, res) {
-    api.authorize_user(req.query['code'], redirect_uri, function (err, result) {
+    instagram.authorize_user(req.query['code'], redirect_uri, function (err, result) {
         if (err) {
             console.log(err.body);
             res.send("ERROR");
@@ -39,7 +39,7 @@ exports.handleAuth = function (req, res) {
 exports.authorize_user = function (req, res) {
     console.log("Authorise called")
     res.send(JSON.stringify({
-        url: api.get_authorization_url(redirect_uri, {
+        url: instagram.get_authorization_url(redirect_uri, {
             scope: ['likes'],
             state: 'a state' //use for security
         })

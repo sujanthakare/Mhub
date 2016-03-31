@@ -1,9 +1,9 @@
 //Secretes
 
-var mClientId = "5d3f51357e4844569d00c9099f6907cf";
-var mClientSecret = "bb3081bd5e5c45c7b8abe98d0730c13f";
-var mCallbackUrl = "http://192.168.43.150:3000/handle_auth";
-var redirect_uri = "http://192.168.43.150:3000/handle_auth";
+var mClientId = "b06619e103e9455a8a6a63665fafb022";
+var mClientSecret = "0c2224879d01409dacdc8f270bbc8515";
+var mCallbackUrl = "https://glacial-island-25064.herokuapp.com/handle_auth";
+var redirect_uri = "https://glacial-island-25064.herokuapp.com/handle_auth";
 
 
 

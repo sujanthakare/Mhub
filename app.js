@@ -38,11 +38,9 @@ exports.handleAuth = function (req, res) {
 
 exports.authorize_user = function (req, res) {
     console.log("Authorise called")
-    res.redirect(JSON.stringify({
-        url: instagram.get_authorization_url(redirect_uri, {
-            scope: ['likes'],
-            state: 'a state' //use for security
-        })
+    res.redirect(instagram.get_authorization_url(redirect_uri, {
+        scope: ['likes'],
+        state: 'a state' //use for security
     }));
 };
 
